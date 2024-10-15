@@ -14,8 +14,3 @@ workflows:
           flutter build ios --release --no-codesign
     artifacts:
       - build/ios/iphoneos/*.ipa
-    publishing:
-      ios:
-        distribute:
-          method: app-store
-          api_token: $APP_STORE_API_TOKEN
