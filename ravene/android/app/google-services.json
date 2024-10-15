@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "74806536200",
+    "firebase_url": "https://ravene-e61ec-default-rtdb.firebaseio.com",
+    "project_id": "ravene-e61ec",
+    "storage_bucket": "ravene-e61ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74806536200:android:7fc9ca0da0f07e312fc9bd",
+        "android_client_info": {
+          "package_name": "com.example.ravene"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMNB7F93sjsh8WSWa_yZ0MGVbULERBVj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
