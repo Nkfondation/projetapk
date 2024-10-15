@@ -1,8 +1,21 @@
 version: 2.0
-scripts:
-  - name: Install dependencies
-    script: |
-      flutter pub get
-  - name: Build iOS
-    script: |
-      flutter build ios --release
+workflows:
+  ios-build:
+    name: iOS Build
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Build iOS
+        script: |
+          flutter build ios --release --no-codesign
+    artifacts:
+      - build/ios/iphoneos/*.ipa
+    publishing:
+      ios:
+        distribute:
+          method: app-store
+          api_token: $APP_STORE_API_TOKEN
