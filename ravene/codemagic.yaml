@@ -1,0 +1,8 @@
+version: 2.0
+scripts:
+  - name: Install dependencies
+    script: |
+      flutter pub get
+  - name: Build iOS
+    script: |
+      flutter build ios --release
